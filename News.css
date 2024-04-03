@@ -1,0 +1,129 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#navbar {
+    height: 60px;
+    padding: 0px 10px 0px 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    background-color: black;
+    box-shadow: 1px 10px 10px gray;
+}
+
+#navbar H1 {
+    color: white;
+}
+
+#menu {
+    text-decoration: none;
+    column-gap: 10px;
+    color: white;
+    display: flex;
+}
+
+#main {
+    padding: 20px;
+    height: calc(100vh - 60px);
+    width: 100%;
+    box-sizing: border-box;
+    row-gap: 20px;
+    column-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card {
+    height: 500px;
+    min-width: 400px;
+    box-shadow: 3px 1px 20px gray;
+    flex: 1;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+}
+.card:hover 
+{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.Thumbnail{
+    height: 60%;
+    width: 70%;
+}
+
+.Thumbnail img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content{
+    flex: 1;
+    width: 100%;
+    padding: 20px;
+}
+
+.title{
+    font-size: 2vmax;
+}
+
+.Disc{
+    font-size: 1.50vmax;
+    margin: 10px 0px 0px 10px;
+}
+
+.extra{
+    margin: 10px 0px 0px 10px;
+}
+
+
+#SearchBar
+{
+    width: 40%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#SearchBar input
+{
+    width: 100%;
+    height: 40px;
+    padding: 2px 20px;
+    border: none;
+    /* background-color: black; */
+    /* color: white; */
+    
+}
+
+#SearchBar button
+{
+    margin-left: 20px;
+    padding: 10px 25px;
+    border: none;
+    background-color: teal;
+    color: white;
+}
+
+#SearchBar button:active
+{
+    cursor: pointer;
+    user-select: none;
+    background-color: white;
+    color: teal;
+}
